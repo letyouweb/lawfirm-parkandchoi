@@ -399,8 +399,8 @@ const App = () => {
   
   useEffect(() => {
     if (typeof initializeApp !== 'undefined' && typeof getAuth !== 'undefined' && typeof getFirestore !== 'undefined') {
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        const appId = typeof window.__app_id !== 'undefined' ? window.__app_id : 'default-app-id';
+        const firebaseConfig = typeof window.__firebase_config !== 'undefined' ? JSON.parse(window.__firebase_config) : {};
         
         try {
             const app = initializeApp(firebaseConfig);
@@ -411,9 +411,9 @@ const App = () => {
 
             const signIn = async () => {
                 try {
-                    if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    if (typeof window.__initial_auth_token !== 'undefined' && window.__initial_auth_token) {
                         // eslint-disable-next-line
-                        await signInWithCustomToken(authInstance, __initial_auth_token);
+                        await signInWithCustomToken(authInstance, window.__initial_auth_token);
                     } else {
                         // eslint-disable-next-line
                         await signInAnonymously(authInstance);

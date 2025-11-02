@@ -19,9 +19,9 @@ interface InsightItem {
 const insightsData: InsightItem[] = [
   {
     category: '뉴스레터',
-    title: ''노란봉투법' 국회 본회의 통과',
+    title: '\'노란봉투법\' 국회 본회의 통과',
     date: '2025.08.25',
-    summary: "법안 통과 현황 국회는 2025년 8월 24일 본회의를 열어 출석 의원 186명 중 찬성 183명, 반대 3명으로 이른바 '노란봉투법'이라 불리는 '노동조합 및 노동관계조정법'...",
+    summary: "법안 통과 현황 국회는 2025년 8월 24일 본회의를 열어 출석 의원 186명 중 찬성 183명, 반대 3명으로 이른바 \'노란봉투법\'이라 불리는 \'노동조합 및 노동관계조정법\'...",
     highlight: true,
   },
   {
@@ -42,7 +42,7 @@ const insightsData: InsightItem[] = [
     category: '뉴스레터',
     title: 'AI 워싱(AI Washing) 유형 및 규제 동향 (1)',
     date: '2025.08.19',
-    summary: "'AI 워싱(AI Washing)'이라고 들어보셨나요? 최근 휴먼뿐만 아니라 금...",
+    summary: "\'AI 워싱(AI Washing)\'이라고 들어보셨나요? 최근 휴먼뿐만 아니라 금...",
     highlight: false,
   },
 ];
