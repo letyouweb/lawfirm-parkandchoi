@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Law Firm - Park & Choi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+법무법인 웹사이트 템플릿 (Next.js 14 + TypeScript + Tailwind CSS)
 
-## Available Scripts
+## 🚀 주요 기능
 
-In the project directory, you can run:
+- ⚡ Next.js 14 App Router
+- 💎 TypeScript 완전 지원
+- 🎨 Tailwind CSS 스타일링
+- 📱 완벽한 반응형 디자인
+- 🔥 Firebase 통합 (선택사항)
+- 📄 풀페이지 스크롤 효과
+- ♿ 웹 접근성 최적화
 
-### `npm start`
+## 📦 설치 및 실행
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+# 의존성 설치
+npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 개발 서버 실행 (http://localhost:3000)
+npm run dev
 
-### `npm test`
+# 프로덕션 빌드
+npm run build
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 프로덕션 서버 실행
+npm start
+```
 
-### `npm run build`
+## 🌍 배포
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Vercel (권장)
+```bash
+# Vercel CLI 설치
+npm i -g vercel
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 배포
+vercel
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+또는 GitHub 연동 후 자동 배포
 
-### `npm run eject`
+## 🔧 환경 설정
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`.env.local` 파일을 생성하고 Firebase 설정을 추가하세요:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your_measurement_id
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Firebase 없이도 사이트는 정상 작동합니다 (익명 UUID 사용).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 프로젝트 구조
 
-## Learn More
+```
+lawfirm-parkandchoi/
+├── src/
+│   ├── app/              # Next.js App Router
+│   │   ├── layout.tsx    # 루트 레이아웃
+│   │   ├── page.tsx      # 홈 페이지
+│   │   └── globals.css   # 글로벌 스타일
+│   └── components/       # React 컴포넌트
+│       └── App.tsx       # 메인 앱 컴포넌트
+├── public/               # 정적 파일
+├── .env.local           # 환경 변수
+└── vercel.json          # Vercel 설정
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎯 섹션 구성
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Hero Section** - 메인 배너 및 검색
+2. **Insights Section** - 뉴스레터 및 인사이트
+3. **Lexology Section** - 업적 및 수상 내역
+4. **Award Section** - 추가 수상 정보
+5. **Footer Section** - 연락처 및 정보
 
-### Code Splitting
+## 🔗 링크
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: https://github.com/letyouweb/lawfirm-parkandchoi
+- Vercel: https://vercel.com/letyouweb/lawfirm-parkandchoi
 
-### Analyzing the Bundle Size
+## 📄 라이선스
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+MIT License - 자유롭게 사용 및 수정 가능
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ❤️ by LetYou Web
